@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Form validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <!-- Form -->
+      <form id="form" class="form">
+        <!-- Sectional inputs -->
+        <!-- username -->
+        <div class="form-control">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            placeholder="Username"
+            id="username"
+            required
+            maxlength="12"
+            minlength="8"
+          />
+          <i
+            class="fa-sharp fa-solid fa-circle-check"
+            style="color: #63e6be"
+          ></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <!-- Email -->
+        <div class="form-control">
+          <label for="username">Email:</label>
+          <input type="email" placeholder="Email" id="email" required />
+          <i
+            class="fa-sharp fa-solid fa-circle-check"
+            style="color: #63e6be"
+          ></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <!-- Phone Number -->
+        <div class="form-control">
+          <label for="Phone">Phone Number:</label>
+          <input
+            type="number"
+            placeholder="Phone Number"
+            id="phoneNumber"
+            required
+          />
+          <i
+            class="fa-sharp fa-solid fa-circle-check"
+            style="color: #63e6be"
+          ></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <!-- Password -->
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            required
+          />
+          <i
+            class="fa-sharp fa-solid fa-circle-check"
+            style="color: #63e6be"
+          ></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <!-- confirmPassword -->
+        <div class="form-control">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            placeholder="confirm Password"
+            id="confirmPassword"
+            required
+          />
+          <i
+            class="fa-sharp fa-solid fa-circle-check"
+            style="color: #63e6be"
+          ></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <!-- submit -->
+        <button id="submit" type="submit">Log In</button>
+      </form>
+    </div>
+    <!-- Success Log in Pop Up Bar -->
+    <div class="cover">
+      <div class="submit_success">
+        <i
+          class="fa-sharp fa-solid fa-circle-check fa-4x"
+          style="color: #63e6be"
+        ></i>
+        <h2>Log In Successful</h2>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/07bda5fbb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

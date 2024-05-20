@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Main body -->
+    <div class="main">
+      <!-- Dark mode -->
+      <button class="dark-mode-btn">
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+      </button>
+      <!-- display Output-->
+      <div class="display">
+        <input type="text" id="result"></input>
+        <p id="history"></p>
+      </div>
+      <!-- keyboard -->
+      <div class="keyboard">
+        <div class="buttons">
+          <button id="clear">AC</button>
+          <button id="delete_single_num">CE</button>
+          <button id="Normal_btn">/</button>
+          <button id="Normal_btn">*</button>
+        </div>
+        <div class="buttons">
+          <button id="Normal_btn">7</button>
+          <button id="Normal_btn">8</button>
+          <button id="Normal_btn">9</button>
+          <button id="Normal_btn">-</button>
+        </div>
+        <div class="buttons">
+          <button id="Normal_btn">4</button>
+          <button id="Normal_btn">5</button>
+          <button id="Normal_btn">6</button>
+          <button id="Normal_btn">+</button>
+        </div>
+        <div class="buttons">
+          <button id="Normal_btn">1</button>
+          <button id="Normal_btn">2</button>
+          <button id="Normal_btn">3</button>
+          <button id="Normal_btn">.</button>
+        </div>
+        <div class="buttons">
+          <button id="Normal_btn">0</button> <button id="Normal_btn">%</button>
+          <button id="squareroot" value="x^2">x²</button>
+          <button id="equalTo" type="submit">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
